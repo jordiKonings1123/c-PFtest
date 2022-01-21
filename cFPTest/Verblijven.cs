@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Verblijven
 {
-    public class Verblijfstype
+    public abstract class Verblijfstype
     {
         public Verblijfstype(string naamVerblijf, decimal basisPrijsPerDag, bool toeslagSingle, List<Formule> beschikbareVerblijfsFormules)
         {
@@ -43,6 +43,7 @@ namespace Verblijven
         {
             SchoonmaakprijserDag = schoonmaakprijserDag;
             Lift = lift;
+            BeschikbareVerblijfsFormules = Default;
         }
 
         public decimal SchoonmaakprijserDag { get; set; }
@@ -60,6 +61,7 @@ namespace Verblijven
         {
             Internet = internet;
             WellnessprijsPerDag = wellnessprijsPerDag;
+            BeschikbareVerblijfsFormules = Default;
         }
 
         public bool Internet { get; set; }
@@ -81,6 +83,7 @@ namespace Verblijven
         {
             SchoonmaakprijsPerDag = schoonmaakprijsPerDag;
             LinnengoedprijsPerDag = linnengoedprijsPerDag;
+            BeschikbareVerblijfsFormules = Default;
         }
 
         public decimal SchoonmaakprijsPerDag { get; set; }

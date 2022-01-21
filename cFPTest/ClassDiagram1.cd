@@ -10,28 +10,28 @@
   <Class Name="Verblijven.Appartement" Collapsed="true">
     <Position X="0.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAAAAAABAAAAAI=</HashCode>
       <FileName>Verblijven.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Verblijven.Hotel" Collapsed="true">
     <Position X="2.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAACAAAAAACAAAABAAAAAA=</HashCode>
       <FileName>Verblijven.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Verblijven.Vakantiehuis" Collapsed="true">
     <Position X="0.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Verblijven.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Vakanties.MTB" Collapsed="true">
     <Position X="0.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAEAgAABAAAAAAAAABAAAAAABAAAAA=</HashCode>
+      <HashCode>AAAgAEAAAAAAAAAAAAAABAAAAAAAAABAAAAAABAAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -39,7 +39,7 @@
   <Class Name="Vakanties.Cinema" Collapsed="true">
     <Position X="2.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEAAAEAAAAAAAAAEAAAABAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AEAAAEAAAAAAAAAAAAAABAAAAAACAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -47,20 +47,34 @@
   <Class Name="Vakanties.Stadsbezoek" Collapsed="true">
     <Position X="4.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAEAAAABAEAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAAAAAAAAAABAEAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Vakanties.Vakantie" Collapsed="true">
     <Position X="7" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Vakanties.Vakantie.DatumException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Vakanties.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAAgAAAAAAAAAAAJKAAAAAAAAgAAAA=</HashCode>
+      <HashCode>AAAAAAAAAgAAAAAAgAAAAAAAAAAAJKAAAAAAACwAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Vakanties.Route" Collapsed="true">
     <Position X="4.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Vakanties.Route.FoutFormuleExeption" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Vakanties.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAABCAAIAAAAAEAAABAAAAAAAAQAAAAAAAAAAgAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
@@ -69,21 +83,21 @@
   <Class Name="Vakanties.Autovakantie" Collapsed="true">
     <Position X="7" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAQEAIAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAQEAIAAAAAAAACAAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Vakanties.Vliegvakantie" Collapsed="true">
     <Position X="9" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAgAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAgAACAAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Vakanties.Cruise" Collapsed="true">
     <Position X="7" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAACAAAAAQAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAACAAAAAYAEAAAAAACAAAAA=</HashCode>
       <FileName>Vakanties.cs</FileName>
     </TypeIdentifier>
   </Class>

@@ -61,6 +61,7 @@ namespace cFPTest
 
 
 
+
                 //**********************************************************
                 //Activiteiten
                 //**********************************************************
@@ -135,7 +136,7 @@ namespace cFPTest
                 {
                     BoekingsNr = 2,
                     Bestemming = Bestemming.Italie,
-                    Vertrekdatum = new DateTime(2020, 05, 14),
+                    Vertrekdatum = new DateTime(2020, 05, 5),
                     Terugkeerdatum = new DateTime(2020, 05, 19),
                     Wagentype = WagenType.Camper,
                     Huurprijs = 500,
@@ -196,10 +197,20 @@ namespace cFPTest
                     }
                 }
             }
+            catch (Route.FoutFormuleExeption)
+            {
+                Console.WriteLine("u hebt een foute formule gegeven");
+            }
+            catch (Vakantie.DatumException message)
+            {
+                Console.WriteLine(message);
+            }
             catch (Exception)
             {
+
                 Console.WriteLine("er is iets fout gebeurt");
             }
+
 
         }
     }

@@ -61,13 +61,17 @@ namespace Vakanties
 
     }
 
-    public class Vakantie
+    public abstract class Vakantie
     {
 
         public int BoekingsNr { get; set; }
         public Bestemming Bestemming { get; set; }
         public DateTime Vertrekdatum { get; set; }
         private DateTime TerugkeerdatumValue;
+        public class DatumException : Exception
+        {
+            public DatumException(string message) : base(message) { }
+        }
         public DateTime Terugkeerdatum
         {
             get
@@ -82,7 +86,7 @@ namespace Vakanties
                 }
                 else
                 {
-                    Console.WriteLine($"reis met boekingsnr{BoekingsNr}: Terugkeerdatum {Terugkeerdatum} moet later zijn dan vertrekdatum {Vertrekdatum}");
+                    throw new DatumException($"reis met boekingsnr{BoekingsNr}: Terugkeerdatum {Terugkeerdatum} moet later zijn dan vertrekdatum {Vertrekdatum}");
                 }
             }
         }
@@ -116,12 +120,13 @@ namespace Vakanties
 
     public class Route
     {
-        public Route(string vertekpunt, string eindpunt, Verblijfstype gekozenVerblijfstype, Formule gekozenFormuleValue)
+        public Route(string vertekpunt, string eindpunt, Verblijfstype gekozenVerblijfstype, Formule gekozenFormule)
         {
             Vertekpunt = vertekpunt;
             Eindpunt = eindpunt;
             GekozenVerblijfstype = gekozenVerblijfstype;
-            GekozenFormuleValue = gekozenFormuleValue;
+
+            GekozenFormule = gekozenFormule;
         }
 
         public string Vertekpunt { get; set; }
@@ -129,7 +134,10 @@ namespace Vakanties
         public Verblijfstype GekozenVerblijfstype { get; set; }
         private Formule GekozenFormuleValue;
 
+        public class FoutFormuleExeption : Exception
+        {
 
+        }
 
         public Formule GekozenFormule
         {
@@ -139,9 +147,12 @@ namespace Vakanties
             }
             set
             {
+
                 bool error = true;
+
                 foreach (Formule formule in GekozenVerblijfstype.BeschikbareVerblijfsFormules)
                 {
+
                     if (value == formule)
                     {
                         GekozenFormuleValue = value;
@@ -150,11 +161,8 @@ namespace Vakanties
                 }
                 if (error == true)
                 {
-                    Console.WriteLine("kies een van de juiste formules");
-                    foreach (Formule formule in GekozenVerblijfstype.BeschikbareVerblijfsFormules)
-                    {
-                        Console.WriteLine(formule);
-                    }
+                    throw new FoutFormuleExeption();
+
                 }
 
             }

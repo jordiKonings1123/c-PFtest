@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Verblijven.Verblijfstype" Collapsed="true">
+    <Position X="0.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAEIE=</HashCode>
+      <FileName>Verblijven.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Verblijven.Appartement" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAI=</HashCode>
+      <FileName>Verblijven.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Verblijven.Hotel" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAABAAAAAA=</HashCode>
+      <FileName>Verblijven.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Verblijven.Vakantiehuis" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Verblijven.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vakanties.MTB" Collapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAgAABAAAAAAAAABAAAAAABAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Vakanties.Cinema" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEAAAAAAAAAEAAAABAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Vakanties.Stadsbezoek" Collapsed="true">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAABAEAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Vakanties.Vakantie" Collapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAgAAAAAAAAAAAJKAAAAAAAAgAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vakanties.Route" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABCAAIAAAAAEAAABAAAAAAAAQAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vakanties.Autovakantie" Collapsed="true">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAQEAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vakanties.Vliegvakantie" Collapsed="true">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vakanties.Cruise" Collapsed="true">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAACAAAAAQAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Vakanties.IActiviteit" Collapsed="true">
+    <Position X="6.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vakanties.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="cFPTest.Formule" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAEAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="cFPTest.Bestemming" Collapsed="true">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAYAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="cFPTest.WagenType" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAgAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

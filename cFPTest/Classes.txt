@@ -1,0 +1,28 @@
+﻿Enums : Formule(prijs) , Bestemming , WagenType
+
+namespace.Verblijf:
+	VerblijfsType> Appartement , Hotel , vakantiehuis
+	Appartement:
+	hotel:
+	vakantiehuis:
+
+namespace.Vakantie:
+	IActiviteit:
+	MTB:
+	Cinema:
+	stadsbezoek:
+
+	Vakantie> Autovakatie , Vliegvakantie , Cruise
+
+	Route:
+
+	Autovakantie:
+	vliegvakantie:
+	Cruise:
+
+
+todo:
+
+
+
+

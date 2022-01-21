@@ -1,5 +1,4 @@
 ﻿using System;
-using static Methods.Methods;
 using Verblijven;
 using Vakanties;
 using System.Collections.Generic;

@@ -95,10 +95,13 @@ namespace Vakanties
         {
             decimal Totaal = 0;
             string ReturnString = "";
-            foreach (IActiviteit activiteit in Activiteiten)
+            if (Activiteiten != null)
             {
-                ReturnString += $"{activiteit.Naam}: {activiteit.BerekenPrijs()} euro#";
-                Totaal += activiteit.BerekenPrijs();
+                foreach (IActiviteit activiteit in Activiteiten)
+                {
+                    ReturnString += $"{activiteit.Naam}: {activiteit.BerekenPrijs()} euro#";
+                    Totaal += activiteit.BerekenPrijs();
+                }
             }
             ReturnString += $"Totaal Bedrag : {Totaal}#";
 
@@ -186,9 +189,12 @@ namespace Vakanties
                 }
             }
             Totaal += Huurprijs;
-            foreach (IActiviteit activiteit in Activiteiten)
+            if (Activiteiten != null)
             {
-                Totaal += activiteit.BerekenPrijs();
+                foreach (IActiviteit activiteit in Activiteiten)
+                {
+                    Totaal += activiteit.BerekenPrijs();
+                }
             }
             return Totaal;
         }

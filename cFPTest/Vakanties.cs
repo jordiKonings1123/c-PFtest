@@ -148,22 +148,10 @@ namespace Vakanties
             set
             {
 
-                bool error = true;
-
-                foreach (Formule formule in GekozenVerblijfstype.BeschikbareVerblijfsFormules)
-                {
-
-                    if (value == formule)
-                    {
-                        GekozenFormuleValue = value;
-                        error = false;
-                    }
-                }
-                if (error == true)
-                {
+                if (GekozenVerblijfstype.BeschikbareVerblijfsFormules.Contains(value))
+                    GekozenFormuleValue = value;
+                else
                     throw new FoutFormuleExeption();
-
-                }
 
             }
         }
@@ -189,20 +177,15 @@ namespace Vakanties
         public override decimal BerekenVakantieprijs()
         {
             decimal Totaal = 0;
+
+
             if (Routes != null)
-            {
-                foreach (Route route in Routes)
-                {
-                    Totaal += route.BerekenVerblijfsprijsPerDag();
-                }
-            }
+                Totaal += Routes.Sum(r => r.BerekenVerblijfsprijsPerDag());
+
             Totaal += Huurprijs;
             if (Activiteiten != null)
             {
-                foreach (IActiviteit activiteit in Activiteiten)
-                {
-                    Totaal += activiteit.BerekenPrijs();
-                }
+                Totaal += Activiteiten.Sum(A => A.BerekenPrijs());
             }
             return Totaal;
         }
@@ -249,10 +232,11 @@ namespace Vakanties
 
             Totaal += Route.BerekenVerblijfsprijsPerDag() * (Terugkeerdatum - Vertrekdatum).Days;
             Totaal += Vliegticketprijs;
-            foreach (IActiviteit activiteit in Activiteiten)
-            {
-                Totaal += activiteit.BerekenPrijs();
-            }
+            Totaal += Activiteiten.Sum(A => A.BerekenPrijs());
+            //foreach (IActiviteit activiteit in Activiteiten)
+            //{
+            //    Totaal += activiteit.BerekenPrijs();
+            //}
             return Totaal;
 
 
